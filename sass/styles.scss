@@ -1,3 +1,10 @@
+@import '_mixins';
+
+$document-background: #eeeeee;
+$form-background: #ffffff;
+$submit-background: #0ca49a;
+$form-font-color: #606163;
+
 html, body, div,
 ul, p, span {
     padding: 0;
@@ -6,4 +13,39 @@ ul, p, span {
 
 a {
     text-decoration: none;
+}
+
+.main-content {
+    background: $document-background !important;
+    height: 100vh;
+    width: 100vw;
+
+    .container {
+        margin-left: 70px;
+        margin-right: 70px;
+
+        .form-container {
+            background: $form-background;
+            form {
+                margin: 30px auto;
+                .form-line {
+                    margin: 0 0 10px;
+
+                    label {
+                        padding: 0 !important;
+                        line-height: 26px;
+                        @include font($form-font-color, 15px, Arial, normal);
+                    }
+
+                    input {
+                        padding: 0;
+                    }
+                }
+                .button {
+                    @include button-style(25px, $form-background, $submit-background);
+                    @include border(0px, 0px, solid, $form-background, $submit-background);
+                }
+            }
+        }
+    }
 }
