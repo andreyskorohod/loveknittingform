@@ -1,0 +1,11 @@
+.welcome-page {
+  width: 100vw;
+  text-align: center;
+  margin-top: 50px; }
+  .welcome-page span {
+    font-family: Arial;
+    font-size: 30px;
+    color: #5f6062;
+    font-weight: bold; }
+
+/*# sourceMappingURL=welcome.css.map */

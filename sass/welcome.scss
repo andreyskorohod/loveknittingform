@@ -1,0 +1,12 @@
+@import '_mixins';
+@import '_variables';
+
+.welcome-page {
+    width: 100vw;
+    text-align: center;
+    margin-top: 50px;
+
+    span {
+        @include font($logo-test-color, 30px, Arial, bold);;
+    }
+}

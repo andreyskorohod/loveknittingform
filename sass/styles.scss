@@ -1,10 +1,5 @@
 @import '_mixins';
-
-$document-background: #eeeeee;
-$form-background: #ffffff;
-$submit-background: #0ca49a;
-$form-font-color: #606163;
-$logo-test-color: #5f6062;
+@import '_variables';
 
 html, body, div,
 ul, p, span {

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,aAAc;EACV,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,IAAI;EAEhB,kBAAK;ICKL,WAAW,EDJ+B,KAAK;ICK/C,SAAS,EDL2B,IAAI;ICMxC,KAAK,ECXS,OAAO;IDYrB,WAAW,EDPsC,IAAI",
+"sources": ["../sass/welcome.scss","../sass/_mixins.scss","../sass/_variables.scss"],
+"names": [],
+"file": "welcome.css"
+}
