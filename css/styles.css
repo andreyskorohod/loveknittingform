@@ -31,7 +31,7 @@ a {
     .main-content .container .form-container form {
       margin: 30px auto; }
       .main-content .container .form-container form .form-line {
-        margin: 0 0 10px; }
+        margin: 10px 0 0px; }
         .main-content .container .form-container form .form-line label {
           padding: 0 !important;
           line-height: 26px;
@@ -42,6 +42,15 @@ a {
           font-weight: normal; }
         .main-content .container .form-container form .form-line input {
           padding: 0; }
+          .main-content .container .form-container form .form-line input.alert-field {
+            border-radius: 0px;
+            border: 1px solid red;
+            color: black; }
+      .main-content .container .form-container form .validation {
+        margin-top: 10px;
+        line-height: 25px;
+        text-align: center;
+        color: red; }
       .main-content .container .form-container form .button {
         margin-top: 10px;
         height: 25px;

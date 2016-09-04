@@ -18,7 +18,6 @@ a {
     padding-top: 30px;
 
     .container {
-
         .logo-container {
             padding-left: 0;
 
@@ -44,7 +43,7 @@ a {
             form {
                 margin: 30px auto;
                 .form-line {
-                    margin: 0 0 10px;
+                    margin: 10px 0 0px;
 
                     label {
                         padding: 0 !important;
@@ -55,13 +54,24 @@ a {
 
                     input {
                         padding: 0;
+
+                        &.alert-field {
+                            @include border(0px, 1px, solid, black, $alert-color);
+                        }
                     }
+                }
+                .validation {
+                    margin-top: 10px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: $alert-color;
                 }
                 .button {
                     margin-top: 10px;
                     @include button-style(25px, $form-background, $submit-background);
                     @include border(0px, 0px, solid, $form-background, $submit-background);
                 }
+
             }
         }
     }
