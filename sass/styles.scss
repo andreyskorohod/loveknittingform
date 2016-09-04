@@ -4,6 +4,7 @@ $document-background: #eeeeee;
 $form-background: #ffffff;
 $submit-background: #0ca49a;
 $form-font-color: #606163;
+$logo-test-color: #5f6062;
 
 html, body, div,
 ul, p, span {
@@ -19,10 +20,29 @@ a {
     background: $document-background !important;
     height: 100vh;
     width: 100vw;
+    padding-top: 30px;
 
     .container {
-        margin-left: 70px;
-        margin-right: 70px;
+
+        .logo-container {
+            padding-left: 0;
+
+            .desktop-logo,
+            .mobile-logo,
+            .logo-text {
+                float: left;
+            }
+
+            .desktop-logo {
+                width: 30%;
+            }
+
+            .logo-text {
+                line-height: 69px;
+                margin-left: 10px;
+                @include font($logo-test-color, 35px, Arial, bold);
+            }
+        }
 
         .form-container {
             background: $form-background;
@@ -34,6 +54,7 @@ a {
                     label {
                         padding: 0 !important;
                         line-height: 26px;
+                        margin-bottom: 0;
                         @include font($form-font-color, 15px, Arial, normal);
                     }
 
@@ -42,8 +63,48 @@ a {
                     }
                 }
                 .button {
+                    margin-top: 10px;
                     @include button-style(25px, $form-background, $submit-background);
                     @include border(0px, 0px, solid, $form-background, $submit-background);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .main-content {
+        .container {
+            .logo-container {
+                .logo-text {
+                    line-height: 110px;
+                    @include font($logo-test-color, 30px, Arial, bold);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .main-content {
+        .container {
+            .logo-container {
+                .logo-text {
+                    line-height: 88px;
+                    @include font($logo-test-color, 40px, Arial, bold);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-content {
+        .container {
+            .logo-container {
+                .logo-text {
+                    line-height: 101.5px;
+                    @include font($logo-test-color, 50px, Arial, bold);
                 }
             }
         }
